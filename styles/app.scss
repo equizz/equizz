@@ -1,0 +1,20 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.input {
+    @apply relative mt-8 mb-1 w-80 transition;
+
+    &-label {
+        @apply absolute bottom-0 text-gray-500 pointer-events-none;
+
+    }
+
+    &-field {
+        @apply border-b-2 w-full outline-none;
+    }
+}
+
+.btn {
+    @apply block bg-accent text-white py-2 uppercase transition hover:opacity-90 hover:shadow focus:bg-accent;
+}
